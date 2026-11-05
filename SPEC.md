@@ -78,8 +78,9 @@ signature is abbreviated in the file).
 ## Verifying
 
 Recompute the digest from the canonical bytes (keys sorted, no whitespace, no `sig`), then verify `sig` with the
-node's public key and any conforming ML-DSA-65 (FIPS 204) implementation. Check the ledger's checkpoint and
-inclusion proof with the Merkle rules described at <https://entropa.space/#architecture>.
+node's public key and any conforming ML-DSA-65 (FIPS 204) implementation. Check each checkpoint (Merkle root, size and
+timestamp, signed) and the leaf hashes with the rules in <https://docs.entropa.space/hashes-and-logs>. The explorer's "Verify in your
+browser" button does all of this with a self-contained script and only the public key.
 
 ## Limits
 

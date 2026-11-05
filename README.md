@@ -43,10 +43,13 @@ See [SPEC.md](SPEC.md) for the event format, the closed vocabularies and the con
 | Piece | Status |
 |---|---|
 | Event types, closed vocabularies and control codes | **Built** and tested |
-| Signing and verification | **Built** (shared with the Entropa ledger) |
-| Evidence endpoint on the node (`POST /v1/evidence`) | Next |
-| Pipeline, CI and deploy emitters | Examples here; first-party emitters next |
-| Scryon Health Data explorer (evidence by control) | Planned |
+| Plain-English description of every record (generated from codes and counts) | **Built** |
+| Signing (ML-DSA-65) with a managed cloud key, and verification | **Built** |
+| Evidence endpoint on the node (`POST /v1/evidence`), exports, helper scripts | **Built** |
+| Explorer (evidence by control, filters, hashes, checkpoints): <https://scryon-health.entropa.space> | **Built** |
+| In-browser verifier (every signature, hash and Merkle root, using only the public key) | **Built** |
+| First-party emitters for CI, deploys and commits | **Built** for our own repository; examples here for yours |
+| Independent witnesses, evidence from more workflows | Planned |
 
 ## Free, and how to get it
 
