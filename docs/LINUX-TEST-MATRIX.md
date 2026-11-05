@@ -34,3 +34,6 @@ Release build, needs only glibc 2.34 or newer (both images have 2.39); no Java, 
 2. `java-17-openjdk-devel` does not exist on Rocky 10 (only Java 21 and 25): a failed install fell through to Coursier, which installed **Java 21**. The Java block now installs Temurin **17** with Coursier on both families.
 3. `cargo install entropa-node` cannot work: the crates.io `entropa-node` is a library. The docs now say so.
 4. Not fixed yet: the node CLI prints a panic message when its output pipe is closed early (for example `| head`). Harmless, to be made quiet.
+
+## Node release 0.2.0 (node-v0.2.0) tested from the published download
+The tarball was downloaded with the documented commands on fresh Ubuntu 24.04.5 and Rocky Linux 10.2 images; `sha256sum -c` passed; then `init`, `log`, `verify` (`OK records=1 checkpoints=1`), `serve` over HTTP and the witness program all worked. The binaries need glibc 2.34 or newer and no Java, Scala or Rust. The build strips symbols and rewrites build paths; the only "personal-looking" string inside is "Scottsdale", from a public TLS root certificate.
