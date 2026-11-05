@@ -1,4 +1,4 @@
-# Risk register v1: DRAFT, awaiting the Human Principal's approval (2026-11-05)
+# Risk register v1: APPROVED by the Human Principal on 2026-11-05 (his words in chat: "I approve RISK-REGISTER-v1")
 
 Scope: the synthetic-data healthcare data platform, the Entropa ledger and its sites. Likelihood and impact: L/M/H. Review quarterly (policy P7).
 
