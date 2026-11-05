@@ -1,0 +1,26 @@
+{
+  "agent": null,
+  "approval_ref": null,
+  "attested_by": null,
+  "decision": "allow",
+  "evidence": {
+    "control": "hipaa_164_312_c1",
+    "flagged": 790,
+    "passed": 6210,
+    "total": 7000
+  },
+  "handle": "agent-hippagrchealthcare",
+  "key_id": "a85f8e8149a971e7",
+  "kind": "evidence.pipeline_run",
+  "label": "silver",
+  "pubkey_fingerprint": null,
+  "reason": "check_passed",
+  "role": null,
+  "sig": "22d66755a29bd601f6ef9d9a26e3fcb5...(6618 hex characters, ML-DSA-65)",
+  "subject_hash": "38756dee0398461a6b1205e28bdc2c72e749b6095686bccfaa68dd06c1c773f5",
+  "synthetic": true,
+  "tenant": "hippagrchealthcare",
+  "ts": 1793000000,
+  "type": "explorer.event",
+  "v": 1
+}
